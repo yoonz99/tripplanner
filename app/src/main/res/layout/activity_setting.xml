@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SettingActivity">
+
+
+
+    <!-- <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="100dp">
+
+         &lt;!&ndash;        <ImageView
+                     android:layout_width="match_parent"
+                     android:layout_height="130dp"
+                     android:src="@drawable/logo" />&ndash;&gt;
+     </LinearLayout>
+ -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="35dp"
+            android:src="@drawable/ic_share" />
+
+        <TextView
+            android:id="@+id/share"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="35dp"
+            android:text="친구에게 앱 공유하기"
+            android:textColor="#505050"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/kakaotalk"
+            android:onClick="shareKakao"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="카카오톡으로 공유하기"
+            android:textColor="#505050"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:onClick="shareKakao"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/line"
+            android:onClick="shareLine"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="라인으로 공유하기"
+            android:textColor="#505050"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:onClick="shareLine"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/twitter"
+            android:onClick="shareTwitter"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="트위터로 공유하기"
+            android:textColor="#505050"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:onClick="shareTwitter"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <Button
+            android:fontFamily="@font/nanumbarunpenbold"
+            android:onClick="logout"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="75dp"
+            android:text="로 그 아 웃"
+            android:textSize="25sp"
+            android:background="#216EF3"
+            android:textColor="#fff"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="70dp">
+
+        <ImageView
+            android:id="@+id/btn_schedule"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="28dp"
+            android:layout_marginVertical="10dp"
+            android:clickable="true"
+            android:src="@drawable/ic_schedule" />
+
+        <ImageView
+            android:id="@+id/btn_cost"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginVertical="10dp"
+            android:clickable="true"
+            android:src="@drawable/ic_cost" />
+
+        <ImageView
+            android:id="@+id/btn_maps"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginVertical="10dp"
+            android:clickable="true"
+            android:src="@drawable/ic_near" />
+
+        <ImageView
+            android:id="@+id/btn_settings"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginVertical="10dp"
+            android:clickable="true"
+            android:src="@drawable/ic_settings" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

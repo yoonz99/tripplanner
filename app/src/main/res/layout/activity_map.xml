@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/layout_map"
+    tools:context=".MapActivity">
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        &lt;!&ndash;        <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:src="@drawable/logo" />&ndash;&gt;
+    </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:hint="Search Location Here" />
+
+
+        <Button
+            android:id="@+id/search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:onClick="onMapSearch"
+            android:text="Search" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="410dp">
+
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:id="@+id/map"
+            tools:context=".MapsActivity"
+            android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <Button
+            android:text="장소검색"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="0.2"
+            android:id="@+id/button"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="0dp">
+
+
+        <ImageView
+            android:id="@+id/btn_schedule"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="28dp"
+            android:layout_marginVertical="10dp"
+            android:src="@drawable/ic_schedule"
+            android:clickable="true"
+            />
+
+        <ImageView
+            android:id="@+id/btn_cost"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginVertical="10dp"
+            android:src="@drawable/ic_cost"
+            android:clickable="true"
+            />
+
+        <ImageView
+            android:id="@+id/btn_maps"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginVertical="10dp"
+            android:src="@drawable/ic_near"
+            android:clickable="true"
+            />
+
+        <ImageView
+            android:id="@+id/btn_settings"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginVertical="10dp"
+            android:src="@drawable/ic_settings"
+            android:clickable="true"
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

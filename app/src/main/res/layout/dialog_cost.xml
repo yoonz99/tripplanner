@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:gravity="center"
+            android:text="가계부 등록"
+            android:textColor="#000000"
+            android:textSize="22dip" >
+        </TextView>
+    </LinearLayout>
+
+    	
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#e8e8e8" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dip" >
+
+        <TextView
+            android:id="@+id/in_out"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:background="@drawable/border"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dip"
+            android:text="수입/지출 선택"
+            android:textColor="#000000"
+            android:textSize="16dip" />
+
+        <TextView
+            android:id="@+id/cate"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/border"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dip"
+            android:text="카테고리 선택"
+            android:textColor="#000000"
+            android:textSize="16dip" />
+
+        <EditText
+            android:id="@+id/money"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/border"
+            android:hint="금액을 입력하세요"
+            android:inputType="numberDecimal"
+            android:paddingLeft="10dip"
+            android:textColor="#000000"
+            android:textSize="15dip" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_marginTop="15dip"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_write"
+                android:layout_width="200dip"
+                android:layout_height="50dip"
+                android:background="@drawable/border1"
+                android:gravity="center"
+                android:text="확인"
+                android:textColor="#000000"
+                android:textSize="16dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

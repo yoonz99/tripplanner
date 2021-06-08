@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CostActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="91dp"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:fontFamily="@font/nanumbarunpenbold"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="경     비"
+            android:textColor="#000000"
+            android:textSize="22dp" >
+        </TextView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e8e8e8" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:fontFamily="@font/nanumbarunpenregular"
+                android:id="@+id/mm"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1000"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="10dp"
+                android:textColor="#000000"
+                android:textSize="14dp" >
+            </TextView>
+
+            <TextView
+                android:fontFamily="@font/nanumbarunpenregular"
+                android:id="@+id/cost"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="경비입력"
+                android:textColor="#000000"
+                android:textSize="14dp" >
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_pre"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/pre_day" />
+
+        <TextView
+            android:fontFamily="@font/nanumbarunpenregular"
+            android:id="@+id/date"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="18dp" >
+        </TextView>
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/next_day" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10000" >
+
+        <LinearLayout
+            android:id="@+id/calendar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:fontFamily="@font/nanumbarunpenregular"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="일"
+                    android:textColor="#ff0000"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:fontFamily="@font/nanumbarunpenregular"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="월"
+                    android:textColor="#000000"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:fontFamily="@font/nanumbarunpenregular"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="화"
+                    android:textColor="#000000"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:fontFamily="@font/nanumbarunpenregular"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="수"
+                    android:textColor="#000000"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:fontFamily="@font/nanumbarunpenregular"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="목"
+                    android:textColor="#000000"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:fontFamily="@font/nanumbarunpenregular"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="금"
+                    android:textColor="#000000"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:fontFamily="@font/nanumbarunpenregular"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="토"
+                    android:textColor="#0000ff"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <GridView
+                android:id="@+id/calendarView"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1000"
+                android:horizontalSpacing="-1dp"
+                android:listSelector="@drawable/grideview_selector"
+                android:numColumns="7"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="1dp" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="0dp">
+
+        <ImageView
+            android:id="@+id/btn_schedule"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="28dp"
+            android:layout_marginVertical="10dp"
+            android:clickable="true"
+            android:src="@drawable/ic_schedule" />
+
+        <ImageView
+            android:id="@+id/btn_cost"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginVertical="10dp"
+            android:clickable="true"
+            android:src="@drawable/ic_cost" />
+
+        <ImageView
+            android:id="@+id/btn_maps"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginVertical="10dp"
+            android:clickable="true"
+            android:src="@drawable/ic_near" />
+
+        <ImageView
+            android:id="@+id/btn_settings"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginVertical="10dp"
+            android:clickable="true"
+            android:src="@drawable/ic_settings" />
+
+
+    </LinearLayout>
+</LinearLayout>
